@@ -3,7 +3,7 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 CREATE TABLE `data_survei` (
-  `no_hp` int(14) NOT NULL,
+  `no_hp` varchar(14) NOT NULL,
   `waktu` varchar(8) NOT NULL,
   `sipp` int(1) NOT NULL,
   `pemutahiran` int(1) NOT NULL,
@@ -33,5 +33,5 @@ ALTER TABLE `data_survei`
   ADD PRIMARY KEY (`no_hp`);
 
   ALTER TABLE `data_survei`
-  MODIFY `no_hp` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `no_hp` varchar(14) NOT NULL AUTO_INCREMENT;
 COMMIT;
