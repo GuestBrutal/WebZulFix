@@ -13,6 +13,7 @@
 </head>
 <?=  $this->include('style/style') ?>
 <body>
+<?= $this->include('layout/header') ?>
 
     <div class="instansi mx-auto">
         

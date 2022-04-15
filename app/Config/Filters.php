@@ -32,11 +32,16 @@ class Filters extends BaseConfig
      */
     public $globals = [
 		'before' => [
-			'csrf',
+			'csrf' => ['except' =>['']],
 			'usersAuth' => [
 				'except' => [
 					'login/*',
 					'logout/*',
+					'survei/add',
+                    'survei/tambah',
+					'getSurvei/*',
+					'saveSurvei/*',
+                    'model_survei/*',
 				]
 			]
 		],

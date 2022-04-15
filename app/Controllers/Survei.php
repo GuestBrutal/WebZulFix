@@ -58,7 +58,7 @@ class Survei extends Controller
         $model->saveSurvei($data);
         echo '<script>
                 alert("Lanjut");
-                window.location="'.base_url('survei').'"
+                window.location="'.base_url('login').'"
             </script>';
 
     }

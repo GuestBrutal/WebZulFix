@@ -11,30 +11,11 @@
                     <thead>
                         <tr>
                             <th>No.</th>
-                            <th>Id Responden</th>
-                            <th>Nomor Telpon</th>
-                            <th>Waktu</th>
-                        </tr>                         
-                    </thead>
-                    <tbody>
-                        <?php $no=1; foreach($getSurvei as $isi){?>
-                            <tr>
-                                <td><?= $no;?></td>
-                                <td><?= $isi['id_user'];?></td>
-                                <td><?= $isi['no_hp'];?></td>
-                                <td><?= $isi['waktu'];?></td>
-                            </tr>
-                        <?php $no++;}?>
-                    </tbody>  
-
-                </table>
-                <table class="table table-bordered table-striped">
-                    <thead>
-                        <tr>
-                            <th>No.</th>
                             <th>Nomor Telpon</th>
                             <th>Waktu</th>
                             <th>Sistem Informasi Pelayanan Publik</th>
+                            <th>Kebijakan Pelayanan</th>
+                            <th>Profesionalisme SDM</th>
                         </tr>                         
                     </thead>
                     <tbody>
@@ -43,7 +24,7 @@
                                 <td><?= $no;?></td>>
                                 <td><?= $isi['no_hp'];?></td>
                                 <td><?= $isi['waktu'];?></td>
-                                <?php  $avg = ($isi['sipp']+$isi['pemutahiran']+$isi['pemutahiran']+$isi['transparan']+$isi['konsultasi']+$isi['pengaduan'])/2;
+                                <?php  $avg = ($isi['sipp']+$isi['pemutahiran']+$isi['transparan']+$isi['konsultasi']+$isi['pengaduan'])/5;
                                     if ($avg > 4) {
                                         $mutu = "Sangat Baik";
                                     } elseif ($avg > 3){
@@ -56,7 +37,35 @@
                                         $mutu = "Sangat Buruk";
                                     }
                                 ?>
+                                <?php  $rat = ($isi['persyaratan']+$isi['prosedur']+$isi['tarif']+$isi['waktua']+$isi['antrian']+$isi['perlibatan']+$isi['publikasi']+$isi['skm']+$isi['tarifb'])/9;
+                                    if ($rat > 4) {
+                                        $has = "Sangat Baik";
+                                    } elseif ($rat > 3){
+                                        $has = "Baik";
+                                    } elseif ($rat > 2){
+                                        $has = "Sedang";
+                                    } elseif ($rat > 1){
+                                        $has = "Buruk";
+                                    } else {
+                                        $has = "Sangat Buruk";
+                                    }
+                                ?>
+                                <?php  $ave = ($isi['waktub']+$isi['kesigapan']+$isi['sikap']+$isi['parkir']+$isi['tunggu']+$isi['toilet']+$isi['khusus']+$isi['penunjang']+$isi['tarifb'])/9;
+                                    if ($ave > 4) {
+                                        $sil = "Sangat Baik";
+                                    } elseif ($ave > 3){
+                                        $sil = "Baik";
+                                    } elseif ($ave > 2){
+                                        $sil = "Sedang";
+                                    } elseif ($ave > 1){
+                                        $sil = "Buruk";
+                                    } else {
+                                        $sil = "Sangat Buruk";
+                                    }
+                                ?>
                                 <td><?= $mutu;?></td>
+                                <td><?= $has;?></td>
+                                <td><?= $sil;?></td>
                             </tr>
                         <?php $no++;}?>
                     </tbody>  
