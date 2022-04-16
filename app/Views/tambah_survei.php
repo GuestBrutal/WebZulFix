@@ -17,9 +17,9 @@
 
     <div class="instansi mx-auto">
         
-        <form method="post" action="<?= base_url('survei/add');?>">
+        <form method="post" action="/survei/add">
             <div class="form-check form-check-inline">
-                <label for="">Nomot Telpon</label>
+                <label for="">Nomor Telepon</label>
                 <input type="text" name="hp" class="form-check-input" required>
             </div>
             <div class="form-check form-check-inline">
@@ -665,8 +665,10 @@
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="tarifb" id="inlineRadio5" value="5" />
                 <label class="form-check-label" for="inlineRadio5">5</label>
+            </div><br>
+            <div class="container-fluid w-100 px-auto text-center">
+                <input type="submit" class = "btn btn-success mb-2 mx-auto w-75" value="SUBMIT">
             </div>
-            <button type="submit" class = "btn btn-success mb-2"value="Submit">SUBMIT</button>
         </form>
     </div>
 

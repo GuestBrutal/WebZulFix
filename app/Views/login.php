@@ -318,21 +318,22 @@ footer a {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
-  </head>
+    </head>
 
   <body>
     <main class="form-signin">
-        <?php if (!empty(session()->getFlashdata('error'))) : ?>
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <?php echo session()->getFlashdata('error'); ?>
-            </div>
-        <?php endif; ?>
-
     <div class="container" id="container">
       <div class="form-container sign-in-container">
         <form method="post" action="<?= base_url(); ?>/login/process">
           <?= csrf_field(); ?>
           <h1>Laman Masuk Admin</h1>
+          <?=(!empty(session()->getFlashdata('error')))?
+          "
+            <p style='color:red;background-color:yellow;padding:3px;font-weight:bold'>
+            ".session()->getFlashdata('error')."
+            </p>
+          "
+          :'';?>
           <input type="text" name="username" id="username" placeholder="Username" class="form-control" required autofocus />
           <input type="password" name="password" id="password" placeholder="Password" class="form-control" required />
           <a href="#">Hubungi Desk Jika Lupa Password</a>

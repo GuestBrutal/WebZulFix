@@ -10,9 +10,9 @@ class UsersAuthFilter implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
-        if(is_null(session()->get('logged_in')))
+        if(empty(session()->get('logged_in')))
         {
-            return redirect()->to(base_url('login/index'));
+            return redirect()->to('/login');
         }
  
     }

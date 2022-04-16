@@ -1,6 +1,6 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <div class="container pt-5">
-    <a href="<?= base_url('survei/tambah');?>" class="btn btn-success mb-2">Tambah Data</a>
+    <a href="/survei/tambah" class="btn btn-success mb-2 ms-2 w-25">Tambah Data Survei</a>
     <div class="card">
         <div class="card-header bg-info text-white">
             <h4 class="card-title">Data Responden</h4>
