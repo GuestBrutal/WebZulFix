@@ -53,7 +53,6 @@ class Survei extends BaseController
             'khusus'  => $this->request->getVar('khusus'),
             'penunjang' => $this->request->getVar('penunjang')
         ];
-        var_dump($data);exit();
         $model->saveSurvei($data);
         echo '<script>
                 alert("Lanjut");

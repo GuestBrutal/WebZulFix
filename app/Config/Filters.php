@@ -38,7 +38,7 @@ class Filters extends BaseConfig
 					'login/*',
 					'logout',
 					'logout/*',
-					'survei/tambah',
+					'/',
 					'survei/add',
 				]
 			]

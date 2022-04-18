@@ -4,7 +4,7 @@
       </div>
       <div class="header-right">
         <ul>
-          <li><a href="/survei">HAsil Survei</a></li>
+          <li><a href="/survei">Hasil Survei</a></li>
           <li><a href="news.asp">News</a></li>
           <li><a href="contact.asp">Contact</a></li>
           <li><a href="about.asp">Home</a></li>
