@@ -55,8 +55,8 @@ class Survei extends BaseController
         ];
         $model->saveSurvei($data);
         echo '<script>
-                alert("Lanjut");
-                window.location="/login"
+                alert("Terimakasih Atas Respon Anda");
+                window.location="/"
             </script>';
 
     }

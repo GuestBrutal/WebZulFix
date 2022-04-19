@@ -10,6 +10,7 @@
     overflow: hidden;
     /* Position the navbar at the top of the page */
     width: 100%;
+    z-index: 10;
 }
 
 h5 {
@@ -87,6 +88,7 @@ input[type="submit"]:hover {
 }
 
 .instansi {
+    margin-top:40px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 30px;
@@ -131,8 +133,14 @@ label {
     box-shadow: 0px 2px 10px rgba(34, 34, 34, 0.1);
     border-radius: 10px;
 }
-
+.container{
+    width:100%;
+}
+.card{
+    border-radius:25px;
+}
 h1 {
+    margin-top:30px;
     font-size: 52px;
     margin-bottom: 30px;
     text-align: center;

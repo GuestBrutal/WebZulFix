@@ -5,9 +5,7 @@
       <div class="header-right">
         <ul>
           <li><a href="/survei">Hasil Survei</a></li>
-          <li><a href="news.asp">News</a></li>
-          <li><a href="contact.asp">Contact</a></li>
-          <li><a href="about.asp">Home</a></li>
+          <li><a href="/">Home</a></li>
         </ul>
       </div>
-    </div>
+</div>
